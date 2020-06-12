@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="All Test Suite" parallel="true" thread-count="3">
+    <listeners>
+        <listener class-name="listeners.CustomListeners"/>
+    </listeners>
+    <test verbose="2" preserve-order="true" name="Selenium Grid">
+        <classes>
+            <!--<class name="testCases.Amazon"/>-->
+            <class name="testCases.AutomateBrowserActions"/>
+            <class name="testCases.AutomationPractice"/>
+            <class name="testCases.AutomationPracticeOrder"/>
+            <class name="testCases.Google"/>
+            <class name="testCases.Techlistic"/>
+        </classes>
+    </test>
+</suite>
