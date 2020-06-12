@@ -49,7 +49,7 @@ public class CustomListeners extends TestBase implements ITestListener {
         String path = takeScreenshot(result.getName());
 
         extentTest.get().log(LogStatus.FAIL, testCaseName.toUpperCase()+" FAILED with Exception: "+result.getThrowable());
-        extentTest.get().log(LogStatus.FAIL, extentTest.get().addScreenCapture(path));
+        extentTest.get().log(LogStatus.FAIL, extentTest.get().addScreenCapture("."+path));
         extentReports.endTest(extentTest.get());
         extentReports.flush();
     }
